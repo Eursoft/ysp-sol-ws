@@ -1,3 +1,13 @@
+var $ = jQuery.noConflict();
+jQuery(function($) {
+	"use strict";
+	// preloader
+	$(window).load(function() {
+		$("#preloader").delay(500).fadeOut("slow");
+		setTimeout(function(){$("#header-content").addClass("animated fadeInDown")},1000);
+    })
+});	
+
 // legg til klassen active til knappa som blir trykt
 (function($) {
     "use strict";
