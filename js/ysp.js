@@ -118,3 +118,32 @@ jQuery(function($) {
         });
     });
 })(jQuery);
+
+$(function(){
+		$("#typed").typed({
+			strings: ["Typed.js is a jQuery plugin.", "It types out sentences.", "And then deletes them.", "Try it out!"],
+			typeSpeed: 30,
+			backDelay: 500,
+			loop: false,
+			// defaults to false for infinite loop
+			loopCount: false,
+		});
+
+	});
+   // ========== END HOMEPAGE TYPED EFFECT ========== //
+  // ========== 16. CONTACT FORM ========== //   
+	var theForm = document.getElementById( 'theForm' );
+	new stepsForm( theForm, {
+		onSubmit : function( form ) {
+		classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
+		$.ajax({
+           type: "POST",
+           url: "contact-form.php",
+           data: $(this).parent().serialize(), // changed
+        });
+		var messageEl = theForm.querySelector( '.final-message' );
+		messageEl.innerHTML = 'Meldingen din har blitt sendt. (Egentlig ikke, denne formen gjør ingenting, he-he.)';
+		classie.addClass( messageEl, 'show' );
+		}
+	});
+
