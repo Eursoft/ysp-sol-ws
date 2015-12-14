@@ -1,3 +1,4 @@
+
 .navbar-brand{
 	height: auto;
 	padding: 0;
@@ -13,12 +14,15 @@
 	font-size: 17px;
 	line-height: 1;
 	padding: 10px 8px;
-	color: #bbb;
-	border: 2px solid #bbb;
+	color: transparent;
+	border: 2px solid transparent;
 	text-align: center;
 }
 
 .navbar-default .navbar-toggle{
+	background-color: #fff !important;
+}
+.navbar-default.affix .navbar-toggle{
 	background-color: #fff !important;
 }
 
@@ -28,8 +32,21 @@
 	border-color: #f56363;
 }
 
+
+
+.navbar-default.affix .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+	background-color: #fff;
+	color: #f56363;
+	border-color: #f56363;
+}
+
 .navbar-nav{
 	margin: 0;
+}
+
+#mainNav img{
+    background-image:url(logo-ysp-copy.png); 
+
 }
 
 .navbar-default{
@@ -38,9 +55,26 @@
 	font-size: 12px;
 	font-weight: 700;
 	letter-spacing: 1.5px;
+	background-color: transparent;
+	border: 0;
+	border-bottom: 1px solid transparent;
+	border-radius: 0;
+	height: 56px;
+	margin: 0;
+	/*-webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.1);*/
+}
+
+.navbar-default.affix{
+
+	font-family:'Raleway', sans-serif;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 1.5px;
 	background-color: #fff;
 	border: 0;
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #EEE;
 	border-radius: 0;
 	height: 56px;
 	margin: 0;
@@ -57,22 +91,47 @@
 	margin-bottom: 0;
 	line-height: 1;
 	text-transform: uppercase;
+	background-color: transparent;
+	color: white;
+	z-index: 1;
+}
+.navbar-default.affix .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li.dropdown > a:focus{
+	position: relative;
+	padding-top: 22px;
+	padding-bottom: 21px;
+	padding-right: 16px;
+	padding-left: 16px;
+	margin-bottom: 0;
+	line-height: 1;
+	text-transform: uppercase;
 	background-color: #fff;
-	color: #777;
+	color: black;
 	z-index: 1;
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li.active > a, .navbar-default .navbar-nav > li:hover > a, .navbar-default .navbar-nav > li.active > a:hover{
 color: #f56363;
-background-color: #FFF;
+background-color: #fff;
+}
+.navbar-default.affix .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li.active > a, .navbar-default .navbar-nav > li:hover > a, .navbar-default .navbar-nav > li.active > a:hover{
+color: #f56363;
+background-color: #fff;
 }
 
 .navbar-default .navbar-nav > li.active > a:focus{
 	color: #f56363;
 	background-color: #fff;
 }
+.navbar-default.affix .navbar-nav > li.active > a:focus{
+	color: #f56363;
+	background-color: #fff;
+}
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
+color: #f56363;
+background-color: #fff;
+}
+.navbar-default.affix .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
 color: #f56363;
 background-color: #fff;
 }
@@ -137,6 +196,7 @@ display: none;
   .container-fluid > .navbar-collapse {
     margin-right: 0;
     margin-left: 0;
+      
   }
   .navbar-collapse {
     width: auto;
@@ -230,4 +290,5 @@ padding-bottom: 20px;
     width: 1170px;
   }
 }
+
 
