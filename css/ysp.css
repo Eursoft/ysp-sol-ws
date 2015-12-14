@@ -460,5 +460,8 @@ animation: pilhopp 1s alternate infinite;
 @-ms-keyframes rotate{
 	0% {-ms-transform:rotate(0deg);}
 	100% {-ms-transform:rotate(360deg);}
+	
+	
+
 
 
