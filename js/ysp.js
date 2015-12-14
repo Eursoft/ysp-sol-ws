@@ -29,6 +29,16 @@ jQuery(function($) {
 })(jQuery);
 
 
+// affix 
+
+ (function($) {
+     $('#mainNav').affix({
+         offset: {
+             top:100
+         }
+     })
+ })(jQuery);
+
 //scroll til topp
 (function($) {
     "use strict";
