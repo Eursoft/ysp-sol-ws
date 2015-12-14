@@ -142,7 +142,7 @@ $(function(){
            data: $(this).parent().serialize(), // changed
         });
 		var messageEl = theForm.querySelector( '.final-message' );
-		messageEl.innerHTML = 'Meldingen din har blitt sendt. (Egentlig ikke, denne formen gjør ingenting, he-he.)';
+		messageEl.innerHTML = 'Meldingen din har blitt sendt. (Egentlig ikke, denne formen gjør ingenting, he-he. Men hva vet jeg.)';
 		classie.addClass( messageEl, 'show' );
 		}
 	});
