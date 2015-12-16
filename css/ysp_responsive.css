@@ -56,11 +56,7 @@
 	margin: 0;
 }
 
-<<<<<<< HEAD
-#mainNav img:hover{
-=======
 #mainNav img{
->>>>>>> origin/feature/navbar
     background-image:url(logo-ysp-copy.png); 
 
 }
