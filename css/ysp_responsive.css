@@ -142,7 +142,7 @@ background-color: grey;
 }
 .navbar-default.affix .navbar-nav > li.active > a:focus{
 	color: #f56363;
-	background-color: #fff;
+	background-color: grey;
 }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
