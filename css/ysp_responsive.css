@@ -26,6 +26,9 @@
 .navbar-default.affix .navbar-toggle{
 	background-color: #fff !important;
 }
+.navbar-default.affix .navbar-toggle{
+	background-color: #fff !important;
+}
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
 	background-color: transparent;
@@ -41,11 +44,23 @@
 	border-color: #f56363;
 }
 
+
+
+.navbar-default.affix .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+	background-color: #fff;
+	color: #f56363;
+	border-color: #f56363;
+}
+
 .navbar-nav{
 	margin: 0;
 }
 
+<<<<<<< HEAD
 #mainNav img:hover{
+=======
+#mainNav img{
+>>>>>>> origin/feature/navbar
     background-image:url(logo-ysp-copy.png); 
 
 }
@@ -129,6 +144,10 @@ background-color: grey;
 .navbar-default.affix .navbar-nav > li.active > a:focus{
 	color: #f56363;
 	background-color: grey;
+}
+.navbar-default.affix .navbar-nav > li.active > a:focus{
+	color: #f56363;
+	background-color: #fff;
 }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
