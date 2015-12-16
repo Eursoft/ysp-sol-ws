@@ -34,11 +34,7 @@ jQuery(function($) {
  (function($) {
      $('#mainNav').affix({
          offset: {
-<<<<<<< HEAD
              top:500
-=======
-             top:100
->>>>>>> origin/feature/navbar
          }
      })
  })(jQuery);
