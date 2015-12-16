@@ -27,6 +27,7 @@
 		<link rel="stylesheet" media="screen" href="css/ysp_responsive.css">
 		<link rel="stylesheet" media="screen" href="css/ysp.css">
 		<link rel="stylesheet" media="screen" href="css/ysp_color.css">
+		<link rel="stylesheet" media="screen" href="css/component.css">
 		<script src="js/modernizr.custom.js"></script>
 	</head>
 	
@@ -38,13 +39,13 @@
 			</div>
     	</div>
     	
-		<nav class="navbar navbar-default navbar-fixed-top nav-fadein" role="navigation">
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">
 					<i class="fa fa-bars fa-fw"></i>
 					</button>
-					<a class="navbar-brand weight-900" href="index.html#home"><img alt="" id="logo" src="logo-ysp.png" height="67"></a>
+					<a class="navbar-brand weight-900" href="index.html#home"><img alt="" id="logo" src="logo-ysp-nav.png" height="67"></a>
 				</div>
 
 				<div class="collapse navbar-collapse" id="main-menu">
@@ -163,34 +164,63 @@
 					</div>
 				</div>
 			</div>	
-			
-			<div class="fullbredde-seksjon">
-				<div class="parallax img-overlay3" style="background-image: url('p2.jpg')" data-stellar-background-ratio="2"></div>
-					<div class="img-overlay-solid" style="background-color:rgba(60,62,71,0.5);"></div>
-				</div>
-			</div>
 		</section> <!-- .fadder -->
 
 <section id="contact">
+<div class="fullbredde-seksjon">
+<div class="parallax img-overlay4" style="background-image: url('p2.jpg')" data-stellar-background-ratio="0.3"></div>
+<div class="img-overlay-solid" style="background-color:rgba(60,62,71,0.7);"></div>
 <div class="container">
 <div class="row" style="margin-bottom: 20px;">
 <div class="col-md-6 col-md-offset-3 text-center">
 
-<h1 class="weight-800 uppercase color-black">kontakt</h1>
-<h4 class="color-black weight-400">yay</h4>
+<h1 class="weight-800 kill-top-margin uppercase color-white">kontakt oss</h1>
+<h4 class="color-white weight-400">svarer sikkert ikke, siden noen endra passordet vårt, men ja..</h4>
 </div>
 </div>
-
-
-
+<!-- START FORM WRAPPER -->
 
 <div class="row">
 <div class="col-md-8 col-md-offset-2">
-<p>her må jeg implementere en kontaktskjema, eller bare ha kontaktinfo? kanskje droppe dinna seksjonen, og ha en footer med kontaktinformasjon. eller. nei. whatever.</p>
+<form id="theForm" class="simform" autocomplete="off">
+					<div class="simform-inner">
+						<ol class="questions">
+							<li>
+								<span><label for="q1">Hva er navnet ditt?</label></span>
+								<input id="q1" name="name" type="text"/>
+							</li>
+							<li>
+								<span><label for="q2">Hva er epostadressen din?</label></span>
+								<input id="q2" name="email" type="text"/>
+							</li>
+							<li>
+								<span><label for="q3">Melding</label></span>
+								<input id="q3" name="message" type="text"/>
+							</li>
+							<li>
+								<span><label for="q4">Telefonnummer</label></span>
+								<input id="q4" name="contact" type="text"/>
+							</li>
+						</ol><!-- /questions -->
+						<button class="submit" type="submit">Send Melding</button>
+						<div class="controls">
+							<button class="next"></button>
+							<div class="progress"></div>
+							<span class="number">
+								<span class="number-current"></span>
+								<span class="number-total"></span>
+							</span>
+							<span class="error-message"></span>
+						</div><!-- / controls -->
+					</div><!-- /simform-inner -->
+					<span class="final-message"></span>
+				</form><!-- /simform -->
 </div>
 </div>
 
-
+<!-- END FORM WRAPPER -->
+</div>
+</div>
 </section>
 		
 		
@@ -204,6 +234,9 @@
 		<script type="text/javascript" src="js/jquery.themepunch.rev-defaults.js"></script>
 		<script type="text/javascript" src="js/animation-engine.js"></script>	
 		<script type="text/javascript" src="js/classie.js"></script>
+		<script type="text/javascript" src="js/validation.js"></script>
+		<script type="text/javascript" src="js/typed.js"></script>
+		<script type="text/javascript" src="js/stepsForm.js"></script>
 		<script type="text/javascript" src="js/ysp.js"></script>		
 	</body>
 </html>
