@@ -34,7 +34,7 @@ jQuery(function($) {
  (function($) {
      $('#mainNav').affix({
          offset: {
-             top:100
+             top:500
          }
      })
  })(jQuery);

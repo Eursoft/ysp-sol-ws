@@ -6,6 +6,7 @@
 	font-size:20px;
 	line-height: 20px;
 	margin-top: 0px !important;
+    background-color: transparent;
 }
 
 .navbar-toggle{
@@ -20,14 +21,14 @@
 }
 
 .navbar-default .navbar-toggle{
-	background-color: #fff !important;
+	background-color: transparent !important;
 }
 .navbar-default.affix .navbar-toggle{
 	background-color: #fff !important;
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
-	background-color: #fff;
+	background-color: transparent;
 	color: #f56363;
 	border-color: #f56363;
 }
@@ -35,7 +36,7 @@
 
 
 .navbar-default.affix .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
-	background-color: #fff;
+	background-color: transparent;
 	color: #f56363;
 	border-color: #f56363;
 }
@@ -44,7 +45,7 @@
 	margin: 0;
 }
 
-#mainNav img{
+#mainNav img:hover{
     background-image:url(logo-ysp-copy.png); 
 
 }
@@ -72,9 +73,9 @@
 	font-size: 12px;
 	font-weight: 700;
 	letter-spacing: 1.5px;
-	background-color: #fff;
+	background-color: grey;
 	border: 0;
-	border-bottom: 1px solid #EEE;
+	border-bottom: 1px solid grey;
 	border-radius: 0;
 	height: 56px;
 	margin: 0;
@@ -104,8 +105,8 @@
 	margin-bottom: 0;
 	line-height: 1;
 	text-transform: uppercase;
-	background-color: #fff;
-	color: black;
+	background-color: transparent;
+	color: white;
 	z-index: 1;
 }
 
@@ -115,16 +116,19 @@ background-color: #fff;
 }
 .navbar-default.affix .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li.active > a, .navbar-default .navbar-nav > li:hover > a, .navbar-default .navbar-nav > li.active > a:hover{
 color: #f56363;
-background-color: #fff;
+background-color: grey;
 }
 
 .navbar-default .navbar-nav > li.active > a:focus{
 	color: #f56363;
 	background-color: #fff;
+    
 }
+
+/*  dette er fargen på navbaren */
 .navbar-default.affix .navbar-nav > li.active > a:focus{
 	color: #f56363;
-	background-color: #fff;
+	background-color: grey;
 }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
